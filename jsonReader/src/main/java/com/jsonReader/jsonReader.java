@@ -22,11 +22,31 @@ public class jsonReader {
 		
 		//establish connection with DB
 		dbConnect connect = new dbConnect();
-		Connection conn = connect.connectToDB();
+		Connection conn = null;
 		
-		//execute select query
-		jsonReader jsonreader = new jsonReader();
-		jsonreader.selectAll(conn);
+		try
+		{
+			
+			conn = connect.connectToDB();
+			
+			//execute select query
+			jsonReader jsonreader = new jsonReader();
+			jsonreader.selectAll(conn);
+		}
+		catch(SQLException e)
+		{
+			System.out.println(e.getMessage());
+		}
+		finally {
+			try {
+				if (conn != null) {
+					conn.close();
+				}
+			} catch (SQLException ex) {
+				System.out.println(ex.getMessage());
+			}
+		
+				}
 	}
 
 }
