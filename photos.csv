@@ -1,0 +1,29 @@
+CREATE TABLE Photographer(
+photographer_id integer primary key
+p_name varchar(200) NOT NULL
+p_url varchar(500));
+CREATE TABLE Favourites(
+fav_id integer primary key autoincrement
+user_id integer
+photo_id integer
+FOREIGN KEY(user_id) references Users(user_id)
+FOREIGN KEY(photo_id) references Photos(photo_id));
+CREATE TABLE Likes(
+like_id integer primary key autoincrement
+user_id integer
+photo_id integer
+FOREIGN KEY(user_id) references Users(user_id)
+FOREIGN KEY(photo_id) references Photos(photo_id));
+CREATE TABLE Photos(
+photo_id integer primary key
+photographer_id integer
+avg_color varchar(200)
+title varchar(200)
+imageMediumSize varchar(200)
+imageLargeSize varchar(200)
+imageOrignalSize varchar(200)
+FOREIGN KEY(photographer_id) references Photographer(photographer_id));
+CREATE TABLE Users(
+user_id integer primary key autoincrement
+username varchar(200)
+password TEXT);

@@ -1,0 +1,17 @@
+{
+  "name": "APPProject",
+  "version": "1.0.0",
+  "description": "APP Project with NodeJS and SQLite",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sqlite3": "^5.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

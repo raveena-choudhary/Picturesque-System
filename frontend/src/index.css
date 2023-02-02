@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "PlusJakartaDisplay-Medium";
+  src: local("PlusJakartaDisplay"),
+    url("./assets//fonts/PlusJakartaDisplay-Medium.otf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "PlusJakartaDisplay-Light";
+  src: local("PlusJakartaDisplay"),
+    url("./assets//fonts/PlusJakartaDisplay-Light.otf") format("truetype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "PlusJakartaDisplay-Regular";
+  src: local("PlusJakartaDisplay"),
+    url("./assets//fonts/PlusJakartaDisplay-Regular.otf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "PlusJakartaDisplay-Bold";
+  src: url("./assets//fonts/PlusJakartaDisplay-Bold.otf") format("truetype");
+  font-weight: 600;
+}
+
+body {
+  margin: 0;
+  font-family: "PlusJakartaDisplay-Regular";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  border-radius: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #151f32;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0c1525;
+}
