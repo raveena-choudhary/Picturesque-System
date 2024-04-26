@@ -115,7 +115,3 @@ In command line:
 In eclipse:
 ![image](https://user-images.githubusercontent.com/52369694/201550933-3a77cbed-ab85-4ad7-a7a4-31b8364d6e42.png)
 =======
-# Project-APP
-Picturesque System
-
->>>>>>> f3c35c4a73fe5ce663815573c02ee5f3f99cda72
