@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-# APP-Project
+### Picturesque system
 
 
 
